@@ -1,4 +1,4 @@
-FROM nginx:1.11.9
+FROM nginx:1.16.0
 
 ADD package.zip.enc /home
 
