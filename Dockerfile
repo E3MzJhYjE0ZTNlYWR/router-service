@@ -3,7 +3,7 @@ FROM nginx:1.16.0
 ADD package.zip.enc /home
 
 RUN apt-get update -y && \
-	apt-get install unzip -y && \
+	apt-get install unzip openssl -y && \
 	apt-get clean
 
 CMD cd /home && \	
